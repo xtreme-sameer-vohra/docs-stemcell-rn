@@ -29,7 +29,7 @@ Bump Ubuntu Trusty stemcells for USN-3534-1: GNU C Library vulnerabilities
 
 - Bumps Ubuntu Trusty stemcells for USN-3522-4; also bumps vSphere stemcells to use VM hardware version 9
 - USN-3522-2 introduced a regression in the Linux Hardware Enablement kernel and USN-3522-4 fixes that issue.
-- Per the 3468.16 release note, monitor your VMs prior to upgrading to these stemcells and scale your VMs as necessary. 
+- Per the 3468.16 release note, monitor your VMs prior to upgrading to this stemcell and scale your VMs as necessary. 
 
 
 ## <a id="3468-16"></a>3468.16
@@ -41,18 +41,18 @@ Bump Ubuntu Trusty stemcells for USN-3534-1: GNU C Library vulnerabilities
 ### <a id='critical'></a> USN-3522-2 Addresses Meltdown Vulnerabilities
 
 Meltdown exploits critical vulnerabilities in modern processors.
-For more information on Meltdown, see the [Meltdown and Spectre Attacks](https://www.cloudfoundry.org/blog/meltdown-spectre-attacks/) blog post.
+For more information about Meltdown, see the [Meltdown and Spectre Attacks](https://www.cloudfoundry.org/blog/meltdown-spectre-attacks/) blog post.
 [USN-3522-2](https://www.cloudfoundry.org/usn-3522-2/) addresses the critical vulnerability in Ubuntu associated with Meltdown.
 </br>
 </br>
 This update may include degradations to performance if your VM's CPU and Memory usage are currently at near-capacity levels.
-Prior to upgrading to these stemcells, monitor your PCF VM's current CPU and Memory usage and scale those components, if necessary. If any of your VMs are currently operating at 60% or above, Pivotal recommends scaling that VM.
-For more information on monitoring PCF, please see the [Monitoring PCF VMs from Ops Manager](http://docs.pivotal.io/pivotalcf/2-0/customizing/monitoring.html) and [Key Capacity Scaling Indicators](https://docs.pivotal.io/pivotalcf/monitoring/key-cap-scaling.html) topics.
+Prior to upgrading to this stemcell, monitor your PCF VM's current CPU and memory usage and scale those components, if necessary. If any of your VMs are currently operating at 60% or above, Pivotal recommends scaling that VM.
+For information about the performance impact of Meltdown-related stemcell patches on PCF components and guidance on scaling, see this [KB article](https://discuss.pivotal.io/hc/en-us/articles/360000309953). Performance degradation is likely to vary by workload type, IaaS, and other factors.
 </br>
 </br>
-For more information about scaling PCF, see the [Scaling PAS](http://docs.pivotal.io/pivotalcf/2-0/opsguide/scaling-ert-components.html) topic.
-Performance degradation is likely to vary by workload type, IaaS, and other factors. 
-Pivotal recommends testing your deployment thoroughly after upgrading to this stemcell.
+For more information about monitoring and scaling PCF, see the [Monitoring PCF VMs from Ops Manager](http://docs.pivotal.io/pivotalcf/2-0/customizing/monitoring.html),
+[Key Capacity Scaling Indicators](https://docs.pivotal.io/pivotalcf/monitoring/key-cap-scaling.html),
+and [Scaling PAS](http://docs.pivotal.io/pivotalcf/2-0/opsguide/scaling-ert-components.html) topics. Pivotal recommends testing your deployment thoroughly after upgrading to this stemcell.
 
 
 ## <a id="3468-13"></a>3468.13
