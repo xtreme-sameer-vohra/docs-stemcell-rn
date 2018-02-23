@@ -1,0 +1,27 @@
+---
+title: Stemcell v1709.x (Windows 2016) Release Notes
+owner: Windows
+---
+
+This topic includes release notes for Windows stemcells used with Pivotal Application Service (PAS) for Windows 2016.
+
+To download a stemcell, see the [Stemcells for PCF (Windows)](https://network.pivotal.io/products/stemcells-windows-server) on Pivotal Network. 
+
+## <a id="1709.3"></a>1709.3
+
+**Release Date**: February 21, 2018
+
+### Note
+
+* The Meltdown &amp; Spectre patch needs to be **enabled** for it to be functional. See [instructions](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/wiki/Creating-a-vSphere-Stemcell-by-Hand) for enabling the patch.
+
+### Improvements
+
+* Intended for use with February 2018 Microsoft security updates.
+* Intended for use with [KB4056892](https://support.microsoft.com/en-us/help/4056892) that addresses Microsoft's guidance for protection against [speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-gb/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution). Please see Microsoft's [Known Issues](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/blob/1709.3/4056892) that apply to their patch.
+
+### Fixes
+
+* Fix BOSH ssh when stemcell is operating as a Diego Cell.
+
+Source code and other assets on [Github](https://github.com/cloudfoundry-incubator/bosh-windows-stemcell-builder/releases/tag/1709.3).
